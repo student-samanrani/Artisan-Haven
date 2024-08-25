@@ -1,0 +1,104 @@
+  .collection{
+    top :0; left: 0; right: 0;
+    margin-top: 60px;
+    min-height: 100vh;
+    background-color: #eee;
+    padding-bottom: 100px;
+  }
+  .collection .controls1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    list-style: none;
+  
+  }
+  .collection .controls1 .buttons{
+    height: 40px;
+    width: 140px;
+    background: #fff;
+    color: #666;
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    margin: 20px;
+    padding-top: 5px;
+    box-shadow: 0 3px 5px rgb(0,0,0,.3);
+    text-align: center;
+  
+  }
+  .collection .controls1 .buttons.active{
+    background-color: coral;
+    color: #fff;
+  }
+  .collection .image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+  }
+    .collection .image-container .image{
+      height: 250px;
+      width: 350px;
+      overflow: hidden;
+      /* border: 15px solid #fff; */
+      box-shadow: 0 3px 5px rgb(0,0,0,.3);
+      margin: 20px;
+  
+      /* gap:15px; */
+      /* columns:3 150px; */
+      /* max-width: 80%; */
+      /* border-radius: 4px; */
+      /* margin-top: 30px; */
+  
+    }
+    .collection .image-container .image img{
+      height: 100%;
+      width: 100%;
+      /* object-fit: cover; */
+    }
+    .collection .image-container .image:hover img{
+      transform: scale(1.4);
+    }
+  
+    /* button see more */
+    .load-more {
+      margin: 50px 0;
+      font-size: 1.2rem;
+      color: #fff;
+      cursor: pointer;
+      padding: 12px 27px;
+      background: #8a6cff;
+      border: none;
+      border-radius: 5px;
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+      font-size: 2rem;
+    }
+    .image.hidden {
+      display: none;
+    }
+  
+    .header1{
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+  }
+  /*
+  .header1 p{
+      letter-spacing: 2px;
+      font-size:2rem ;
+      font-weight: 500;
+      padding-top: 15px;
+   /* }  */
+   .header1 h1{
+       letter-spacing: 2px;
+       margin-top: 60px;
+       font-size:4rem ;
+       font-weight: 900;
+       color: coral;
+  }

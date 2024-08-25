@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-width: none;
+    border-style: solid;
+    outline: none;
+}
+body{
+    font-family: 'poppins';
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+ .Contact{
+    margin-top: 7%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+} 
+.Contact h2{
+    font-size: 50px;
+    color: #383f47;
+    margin-bottom: 25px;
+    position: relative;
+}
+.Contact h2::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    background-color: var(--orange);
+}
+.Contact p{
+    font-size: 20px;
+    color :#666;
+    margin-bottom: 35px;
+}
+form {
+    border: 2px solid #ddd; 
+    border-radius: 8px;    
+    padding: 20px;          
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    background-color: #fff; 
+    margin-bottom: 3rem;
+}
+.form-control {
+    border-radius: 0;
+    font-size: 16px;
+    color: #666;
+    box-shadow:1px 1px 2px black, 0 0 10px rgb(53, 53, 54), 0 0 2px darkblue;
+    border: 1px solid #ccc;
+}
+.form-group label{
+    font-size: 18px;   
+}
+.form-group input{
+    font-size: 16px;
+    color: #666;
+}
+.form-group textarea{
+    font-size: 16px;
+    color: #666;
+}
+.btn-outline-dark {
+    border-radius: 0;
+    padding: 5rem 6rem;
+    border-width: 7px;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+@media (max-width: 1200px) {
+    .Contact {
+        width: 100%;
+    }
+    form {
+        width: 100%;       
+    }
+}
+@media (max-width: 991px) {
+    .form-group label {
+        font-size: 22px;   
+    }
+    .form-group input {
+        font-size: 20px;   
+    }
+
+    .form-group textarea {
+        font-size: 18px;  
+    }
+}
+@media (max-width: 768px) {
+    .Contact{
+        margin-top: 7rem;
+    }
+.form-group label{
+    font-size: 20px;   
+}
+.form-group input{
+    font-size: 18px;
+}
+.form-group textarea{
+    font-size: 18px;
+}
+}
+@media (max-width: 450px) {
+    .Contact p{
+        font-size: 16px;
+        margin-bottom: 35px;
+    }
+.form-group label{
+    font-size: 22px;   
+}
+.form-group input{
+    font-size: 20px;
+}
+.form-group textarea{
+    font-size: 20px;
+}
+}
